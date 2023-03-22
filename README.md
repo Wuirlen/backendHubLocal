@@ -34,7 +34,7 @@ git clone https://github.com/Wuirlen/backendHubLocal.git
 ### Acesse o projeto pelo terminal
 
 ```bash
-cd backend
+cd backendHubLocal
 ```
 
 ### Abra na sua IDE favorita
