@@ -70,4 +70,9 @@ npm run db:migrate -> Roda as migrations
 npm run start:dev -> Inicia o app
 npm run test:cov -> Roda os testes
 ```
+### Acessando a documentação da API feita utilizando Swagger
+
+```bash
+Troque o parâmetro PORT pelo seu valor definido no arquivo .env.development, então é possível acessar via:  http://localhost:PORT/api.
+```
 This is a challenge by [Coodesh](https://coodesh.com/).
