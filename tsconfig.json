@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@controllers": ["src/controllers/index"],
+      "@middlewares": ["src/middlewares/index"],
+      "@dtos": ["src/core/dtos/index"],
+      "@data-service": ["src/core/data-service/index"],
+      "@entities": ["src/core/entities"],
+      "@database/*": ["src/frameworks/database/*"],
+      "@encrypt/*": ["src/frameworks/encrypt/*"],
+      "@auth/*": ["src/frameworks/auth/*"],
+      "@user/*": ["src/use-cases/user/*"],
+      "@company/*": ["src/use-cases/company/*"],
+      "@local/*": ["src/use-cases/local/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".docker"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rootDir": "./",
+  "modulePaths": ["<rootDir>/src/"],
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "testRegex": ".*\\.spec\\.ts$",
+  "coverageDirectory": "../coverage",
+  "collectCoverageFrom": ["src/**/*.ts"],
+  "coveragePathIgnorePatterns": [
+    "src/main.ts",
+    "src/core/data-service",
+    "src/core/entities",
+    ".module.ts",
+    ".factory.ts"
+  ],
+  "moduleNameMapper": {
+    "@controllers": "<rootDir>/src/controllers/index",
+    "@middlewares": "<rootDir>/src/middlewares/index",
+    "@dtos": ["<rootDir>/src/core/dtos/index"],
+    "@entities": ["<rootDir>/src/core/entities/index"],
+    "@data-service": ["<rootDir>/src/core/data-service/index"],
+    "@database/(.*)": ["<rootDir>/src/frameworks/database/$1"],
+    "@encrypt/(.*)": ["<rootDir>/src/frameworks/encrypt/$1"],
+    "@auth/(.*)": ["<rootDir>/src/frameworks/auth/$1"],
+    "@user/(.*)$": ["<rootDir>/src/use-cases/user/$1"],
+    "@company/(.*)$": ["<rootDir>/src/use-cases/company/$1"],
+    "@local/(.*)$": ["<rootDir>/src/use-cases/local/$1"]
+  },
+  "modulePathIgnorePatterns": ["dist"]
+}
